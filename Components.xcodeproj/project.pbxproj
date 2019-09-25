@@ -14,6 +14,12 @@
 		5D24F3092337D5C100D692AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D24F3082337D5C100D692AD /* Preview Assets.xcassets */; };
 		5D24F30C2337D5C100D692AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D24F30A2337D5C100D692AD /* LaunchScreen.storyboard */; };
 		5D24F3152337D6DF00D692AD /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D24F3142337D6DF00D692AD /* CreditCardView.swift */; };
+		5DF84A3E233B283C00A8F2F3 /* ThreadRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF84A3D233B283C00A8F2F3 /* ThreadRow.swift */; };
+		5DF84A40233B286000A8F2F3 /* ThreadList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF84A3F233B286000A8F2F3 /* ThreadList.swift */; };
+		5DF84A44233B28BA00A8F2F3 /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF84A43233B28BA00A8F2F3 /* MessageRow.swift */; };
+		5DF84A46233B28C100A8F2F3 /* MessageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF84A45233B28C100A8F2F3 /* MessageList.swift */; };
+		5DF84A48233B2E4000A8F2F3 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF84A47233B2E4000A8F2F3 /* Thread.swift */; };
+		5DF84A4A233B2E4900A8F2F3 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF84A49233B2E4900A8F2F3 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		5D24F30B2337D5C100D692AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D24F30D2337D5C100D692AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D24F3142337D6DF00D692AD /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
+		5DF84A3D233B283C00A8F2F3 /* ThreadRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadRow.swift; sourceTree = "<group>"; };
+		5DF84A3F233B286000A8F2F3 /* ThreadList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadList.swift; sourceTree = "<group>"; };
+		5DF84A43233B28BA00A8F2F3 /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
+		5DF84A45233B28C100A8F2F3 /* MessageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageList.swift; sourceTree = "<group>"; };
+		5DF84A47233B2E4000A8F2F3 /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		5DF84A49233B2E4900A8F2F3 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +72,12 @@
 			children = (
 				5D24F2FF2337D5C100D692AD /* AppDelegate.swift */,
 				5D24F3012337D5C100D692AD /* SceneDelegate.swift */,
-				5D24F3132337D6B600D692AD /* CreditCard */,
 				5D24F3032337D5C100D692AD /* ContentView.swift */,
 				5D24F3052337D5C100D692AD /* Assets.xcassets */,
 				5D24F30A2337D5C100D692AD /* LaunchScreen.storyboard */,
 				5D24F30D2337D5C100D692AD /* Info.plist */,
+				5DF84A3C233B267700A8F2F3 /* Chat UI */,
+				5D24F3132337D6B600D692AD /* Credit Card */,
 				5D24F3072337D5C100D692AD /* Preview Content */,
 			);
 			path = Components;
@@ -78,12 +91,41 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5D24F3132337D6B600D692AD /* CreditCard */ = {
+		5D24F3132337D6B600D692AD /* Credit Card */ = {
 			isa = PBXGroup;
 			children = (
 				5D24F3142337D6DF00D692AD /* CreditCardView.swift */,
 			);
-			path = CreditCard;
+			path = "Credit Card";
+			sourceTree = "<group>";
+		};
+		5DF84A3C233B267700A8F2F3 /* Chat UI */ = {
+			isa = PBXGroup;
+			children = (
+				5DF84A42233B28A700A8F2F3 /* Thread */,
+				5DF84A41233B286700A8F2F3 /* Inbox */,
+			);
+			path = "Chat UI";
+			sourceTree = "<group>";
+		};
+		5DF84A41233B286700A8F2F3 /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				5DF84A3F233B286000A8F2F3 /* ThreadList.swift */,
+				5DF84A3D233B283C00A8F2F3 /* ThreadRow.swift */,
+				5DF84A47233B2E4000A8F2F3 /* Thread.swift */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
+		5DF84A42233B28A700A8F2F3 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				5DF84A45233B28C100A8F2F3 /* MessageList.swift */,
+				5DF84A43233B28BA00A8F2F3 /* MessageRow.swift */,
+				5DF84A49233B2E4900A8F2F3 /* Message.swift */,
+			);
+			path = Thread;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,10 +198,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DF84A44233B28BA00A8F2F3 /* MessageRow.swift in Sources */,
 				5D24F3002337D5C100D692AD /* AppDelegate.swift in Sources */,
 				5D24F3022337D5C100D692AD /* SceneDelegate.swift in Sources */,
+				5DF84A3E233B283C00A8F2F3 /* ThreadRow.swift in Sources */,
 				5D24F3042337D5C100D692AD /* ContentView.swift in Sources */,
+				5DF84A40233B286000A8F2F3 /* ThreadList.swift in Sources */,
 				5D24F3152337D6DF00D692AD /* CreditCardView.swift in Sources */,
+				5DF84A4A233B2E4900A8F2F3 /* Message.swift in Sources */,
+				5DF84A48233B2E4000A8F2F3 /* Thread.swift in Sources */,
+				5DF84A46233B28C100A8F2F3 /* MessageList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
