@@ -1,13 +1,25 @@
 import SwiftUI
 
-struct InboxRow: View {
+struct ThreadRow {
+    @State var thread: Thread
+    
+    @State var height: CGFloat
+}
+
+extension ThreadRow: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            ImageDetail(image: "christianAmpeOregon", title: thread.title, detail: thread.detail, height: height)
+        }
     }
 }
 
-struct InboxRow_Previews: PreviewProvider {
+struct ThreadRow_Previews: PreviewProvider {
     static var previews: some View {
-        InboxRow()
+        ThreadRow(thread: Thread(id: "0",
+                                 title: "Christian Ampe",
+                                 detail: "Have you ever been to Sonoma before?",
+                                 info: "Tuesday"),
+                  height: 60)
     }
 }

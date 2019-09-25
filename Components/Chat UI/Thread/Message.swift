@@ -1,10 +1,3 @@
-//
-//  Message.swift
-//  Components
-//
-//  Created by Christian Ampe on 9/24/19.
-//
-
 import Foundation
 
 struct Message: Hashable, Codable {
@@ -24,7 +17,6 @@ extension Message.Content: Hashable, Codable {
         
         if let value = try? values.decode(String.self, forKey: .text) {
             self = .text(value)
-            return
         } else {
             throw CodingError.decoding
         }

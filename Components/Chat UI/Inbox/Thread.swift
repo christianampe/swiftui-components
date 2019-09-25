@@ -1,10 +1,3 @@
-//
-//  Thread.swift
-//  Components
-//
-//  Created by Christian Ampe on 9/24/19.
-//
-
 import Foundation
 
 struct Thread: Hashable, Codable {

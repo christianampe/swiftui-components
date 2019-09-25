@@ -1,13 +1,17 @@
 import SwiftUI
 
-struct InboxList: View {
+struct ThreadList {
+    
+}
+
+extension ThreadList: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+       Text("Hi")
     }
 }
 
-struct InboxList_Previews: PreviewProvider {
+struct ThreadList_Previews: PreviewProvider {
     static var previews: some View {
-        InboxList()
+        ThreadList()
     }
 }

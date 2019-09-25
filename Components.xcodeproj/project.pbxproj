@@ -20,6 +20,8 @@
 		5DF84A46233B28C100A8F2F3 /* MessageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF84A45233B28C100A8F2F3 /* MessageList.swift */; };
 		5DF84A48233B2E4000A8F2F3 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF84A47233B2E4000A8F2F3 /* Thread.swift */; };
 		5DF84A4A233B2E4900A8F2F3 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF84A49233B2E4900A8F2F3 /* Message.swift */; };
+		5DF84A4E233B382700A8F2F3 /* ImageDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF84A4D233B382700A8F2F3 /* ImageDetail.swift */; };
+		5DF84A50233B38C700A8F2F3 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF84A4F233B38C700A8F2F3 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		5DF84A45233B28C100A8F2F3 /* MessageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageList.swift; sourceTree = "<group>"; };
 		5DF84A47233B2E4000A8F2F3 /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
 		5DF84A49233B2E4900A8F2F3 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		5DF84A4D233B382700A8F2F3 /* ImageDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetail.swift; sourceTree = "<group>"; };
+		5DF84A4F233B38C700A8F2F3 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +106,9 @@
 		5DF84A3C233B267700A8F2F3 /* Chat UI */ = {
 			isa = PBXGroup;
 			children = (
-				5DF84A42233B28A700A8F2F3 /* Thread */,
+				5DF84A4B233B37AE00A8F2F3 /* Shared */,
 				5DF84A41233B286700A8F2F3 /* Inbox */,
+				5DF84A42233B28A700A8F2F3 /* Thread */,
 			);
 			path = "Chat UI";
 			sourceTree = "<group>";
@@ -126,6 +131,23 @@
 				5DF84A49233B2E4900A8F2F3 /* Message.swift */,
 			);
 			path = Thread;
+			sourceTree = "<group>";
+		};
+		5DF84A4B233B37AE00A8F2F3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				5DF84A4C233B37B500A8F2F3 /* Views */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		5DF84A4C233B37B500A8F2F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5DF84A4D233B382700A8F2F3 /* ImageDetail.swift */,
+				5DF84A4F233B38C700A8F2F3 /* CircleImage.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +224,8 @@
 				5D24F3002337D5C100D692AD /* AppDelegate.swift in Sources */,
 				5D24F3022337D5C100D692AD /* SceneDelegate.swift in Sources */,
 				5DF84A3E233B283C00A8F2F3 /* ThreadRow.swift in Sources */,
+				5DF84A4E233B382700A8F2F3 /* ImageDetail.swift in Sources */,
+				5DF84A50233B38C700A8F2F3 /* CircleImage.swift in Sources */,
 				5D24F3042337D5C100D692AD /* ContentView.swift in Sources */,
 				5DF84A40233B286000A8F2F3 /* ThreadList.swift in Sources */,
 				5D24F3152337D6DF00D692AD /* CreditCardView.swift in Sources */,
